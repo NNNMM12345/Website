@@ -36,7 +36,7 @@ margin-bottom:10px;
 }
 
 /* Header */
-header{
+/* header{
 background:#35424a;
 color:#ffffff;
 padding-top:-3px;
@@ -62,7 +62,7 @@ header li{
 float:left;
 display:inline;
 padding: 0 20px 0 20px;
-}
+} */
 
 #info{
   font:24px/1.5 Arial, Helvetica, sans-serif;
@@ -85,10 +85,10 @@ header #branding h1{
 margin:0;
 }
 
-header nav{
+/* header nav{
 float:right;
 margin-top:10px;
-}
+} */
 
 header .highlight, header .current a{
 color:#e8491d;
@@ -312,14 +312,14 @@ background:#e6e6e6;
   position: relative;
 }
 
-footer{
+/* footer{
 padding:20px;
 margin-top:20px;
 margin-bottom:-21px;
 color:#ffffff;
 background-color:#e8491d;
 text-align: center;
-}
+} */
 
 #forgotpassfoot{
   position: bottom;
