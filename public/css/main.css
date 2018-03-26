@@ -1,0 +1,17 @@
+.header {
+  align-items: center;
+  border-bottom: 2px solid black;
+  display: grid;
+  grid-auto-flow: column;
+  height: 50px;
+  justify-items: center;
+}
+
+.form-container {
+  margin: 25px auto;
+  width: 30%;
+}
+
+.alert {
+  margin-top: 20px;
+}
