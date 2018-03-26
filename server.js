@@ -59,7 +59,7 @@ app.listen(process.env.PORT || 5000, process.env.IP, () => {
 	console.log("Express Server has Started!");
 });
 
-// keep app awake
+// keep app awake with GET request every 5 minutes
 const http = require("http");
 setInterval(function() {
     http.get("http://fuskerbrothers.herokuapp.com");
