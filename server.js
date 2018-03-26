@@ -11,7 +11,7 @@ const mongoose = require("mongoose");
 const passport = require("passport");
 
 // database === === ===
-mongoose.connect(process.env.DATABASE_URL);
+mongoose.connect(process.env.MONGODB_URI);
 
 // models
 const User = require("./models/user");
