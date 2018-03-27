@@ -1,25 +1,29 @@
 <% include ./partials/header %>
-  <div class="row">
-    <div class="form-container">
-      <form action="/register" method="POST">
-        <h1 class="text-center">Sign Up</h1>
-        <div class="form-group">
-          <label for="registerUsername">Username</label>
-          <input class="form-control" id="registerUsername" name="username" placeholder="username" type="text">
+<div class="container--body">
+  <div class="form__container">
+    <form class="auth__form" action="/register" method="POST">
+      <h1 class="auth__form--title">Sign Up</h1>
+      <div class="form__group form__group--input">
+        <div class="form__input form__input--top">
+          <i class="fas fa-user input__icon"></i>
+          <input class="text__input" name="username" placeholder="username" type="text" autofocus>
         </div>
-        <div class="form-group">
-          <label for="registerPassword">Password</label>
-          <input class="form-control" id="registerPassword" name="password" placeholder="password" type="password">
+        <div class="form__input">
+          <i class="fas fa-envelope input__icon"></i>
+          <input class="text__input" name="email" placeholder="email" type="email">
         </div>
-        <div class="form-group">
-          <input class="btn btn-primary btn-block" type="submit" value="Sign Up">
+        <div class="form__input form__input--bottom">
+          <i class="fas fa-key input__icon"></i>
+          <input class="text__input" name="password" placeholder="password" type="password">
         </div>
-      </form>
-      <p class="text-center">
-        <a class="float-left" href="/">Go Back</a>
-        <a class="float-right" href="/register">Sign Up</a>
-        <a href="/forgot">Forgot Password</a>
-      </p>
-    </div>
+      </div>
+      <input class="form__submit" type="submit" value="Sign Up">
+    </form>
+    <p class="auth__form--links">
+      <a class="auth__form__link auth__form__link--one" href="/">Go Back</a>
+      <a class="auth__form__link auth__form__link--two" href="/login">Log In</a>
+      <a class="auth__form__link auth__form__link--three" href="/forgot">Forgot Password</a>
+    </p>
   </div>
+</div>
 <% include ./partials/footer %>
